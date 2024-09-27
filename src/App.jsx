@@ -28,7 +28,8 @@ useEffect(()=>{
   .catch(error => console.error("Error ", error));
 }, [adviceButton]);
 
-const getAdvice = () =>{
+const getAdvice = (e) =>{
+  e.preventDefault();
   setAdviceButton(adviceButton + 1);
 };
 
@@ -37,7 +38,7 @@ const getAdvice = () =>{
         <article className="wrapper">
             <div className="advice__container">
                 <span className="advice__idContainer">ADVICE <span className="advice__id" aria-live="polite">#{data.id}</span></span>
-                <p className="advice__textContainer">“{data.advice}”</p>
+                <p className="advice__textContainer" aria-live="polite">“{data.advice}”</p>
                 <img src={borderImg} alt="dice icon" className="border" />
                 <button aria-label="advice generate button" className="advice__generateBtn" onClick={getAdvice}>
                     <img src={diceIcon} alt="dice icon" className="dice__img" />
