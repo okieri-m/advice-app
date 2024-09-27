@@ -1,6 +1,8 @@
 # 1 プロジェクト概要 (Overview)
 Application name: Advice Generator
 
+<img src="https://github.com/user-attachments/assets/fec6ad6c-3b2c-47bc-b0dc-b454e7cfd2ee" width="300">
+
 説明: このアプリは、ランダムなアドバイスを提供するAPIを使って、ボタンをクリックするごとに新しいアドバイスを表示するReactアプリです。
 
 Description: This app uses an API to provide random advice. A new piece of advice is displayed each time the user clicks the button.
